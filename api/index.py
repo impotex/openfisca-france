@@ -1,11 +1,7 @@
-{
-  "builds": [
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
+# api/index.py
+
+def handler(request):
+    return {
+        "statusCode": 200,
+        "body": "Hello, world!"
     }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "api/index.py" }
-  ]
-}
